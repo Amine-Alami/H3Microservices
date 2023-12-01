@@ -3,7 +3,7 @@ services:
   web:
     build: 
       context: ./frontend
-    image: frontend
+    image: aminealami7/frontend
     volumes:
       - ./frontend:/app
     depends_on:
@@ -15,7 +15,7 @@ services:
   api:
     build: 
       context: ./backend
-    image: backend
+    image: aminealami7/backend
     volumes:
       - ./backend:/app
     depends_on:
