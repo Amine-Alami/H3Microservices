@@ -13,7 +13,9 @@ services:
     networks:
       - network-backend
   api:
-    build: ./backend
+    build: 
+      context: ./backend
+    image: backend
     volumes:
       - ./backend:/app
     depends_on:
